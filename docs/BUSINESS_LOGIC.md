@@ -1,4 +1,4 @@
-# Gym Management System - Business Logic & Requirements
+# Fitness Coaching Platform - Business Logic & Requirements
 
 ## 1. Overview
 The platform connects fitness trainers with trainees through various modes of engagement, including physical sessions, live online classes, and pre-recorded courses. It supports both free and paid content, managed via role-based access for Trainers, Trainees, and Administrators.
