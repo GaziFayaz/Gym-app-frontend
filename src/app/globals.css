@@ -13,7 +13,7 @@
   --accent: #FCA5A5;     /* Red-300: Soft Highlights */
   
   /* Text Muted */
-  --muted: #a1a1aa;      /* Zinc-400 */
+  --muted: #b7b7c2;
 }
 
 @theme inline {

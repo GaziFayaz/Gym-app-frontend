@@ -32,7 +32,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="dark">
 			<body
-				className={`${kanit.variable} ${rubik.variable} antialiased bg-background text-foreground font-body flex flex-col min-h-screen`}
+				className={`${kanit.variable} ${rubik.variable} antialiased bg-background text-foreground font-body flex flex-col min-h-screen px-4`}
 			>
 				<Navbar />
 				<main className="flex-1">{children}</main>

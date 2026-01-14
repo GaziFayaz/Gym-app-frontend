@@ -22,7 +22,7 @@ export function Navbar() {
 		const handleScroll = () => {
 			const currentScrollY = window.scrollY;
 			// Show navbar if scrolling up or at the very top
-			if (currentScrollY < lastScrollY || currentScrollY < 100) {
+			if (currentScrollY < lastScrollY || currentScrollY < 50) {
 				setIsVisible(true);
 			} else if (currentScrollY > lastScrollY && currentScrollY > 50) {
 				// Hide navbar if scrolling down and not at the top
@@ -39,10 +39,10 @@ export function Navbar() {
 		<nav
 			className={cn(
 				"fixed top-4 left-4 right-4 z-50 md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-3xl lg:max-w-7xl rounded-2xl border border-white/10 bg-neutral-800/40 backdrop-blur-xl shadow-lg/50 transition-transform duration-300",
-				!isVisible && !isOpen ? "-translate-y-[200%]" : "translate-y-0"
+				!isVisible && !isOpen ? "-translate-y-[200%] lg:translate-y-0" : "translate-y-0"
 			)}
 		>
-			<div className="px-6 h-16 flex items-center justify-between gap-4">
+			<div className="px-6 h-16 flex items-center justify-between gap-4 font-body">
 				{/* Left: Brand */}
 				<Link
 					href="/"
@@ -60,14 +60,14 @@ export function Navbar() {
 						<Link
 							key={link.name}
 							href={link.href}
-							className="text-sm font-medium text-muted hover:text-primary transition-colors"
+							className="text-sm font-medium text-accent hover:text-primary transition-colors"
 						>
 							{link.name}
 						</Link>
 					))}
 					<Link
 						href="/#how-it-works"
-						className="text-sm font-medium text-muted hover:text-primary transition-colors"
+						className="text-sm font-medium text-accent hover:text-primary transition-colors"
 					>
 						How it Works
 					</Link>
@@ -81,7 +81,7 @@ export function Navbar() {
 					>
 						Become a Coach
 					</Link>
-					<Button variant="ghost" asChild>
+					<Button variant="outline" asChild className="hover:text-black font-bold">
 						<Link href="/login">Log in</Link>
 					</Button>
 					<Button asChild>
