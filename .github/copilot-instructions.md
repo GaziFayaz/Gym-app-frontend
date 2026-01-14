@@ -1,6 +1,6 @@
 # Copilot Instructions
 
-You are an expert AI programming assistant working on a Next.js 16 frontend project for a Gym Management System.
+You are an expert AI programming assistant working on a Next.js 16 frontend project for a Fitness Coaching Platform.
 Always follow these project-specific rules and architectural guidelines when generating code.
 
 For detailed business requirements, feature definitions, and domain logic, always refer to `docs/BUSINESS_LOGIC.md` before implementing or discussing features.
