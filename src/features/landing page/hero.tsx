@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<div className="flex flex-col lg:flex-row items-center justify-between gap-5">
 			<div className="max-w-md z-10 gap-4 flex flex-col">
-				<h1 className="font-heading font-bold text-4xl leading-tight text-accent">
+				<h1 className="font-heading font-bold text-5xl leading-tight text-accent">
 					Train Anywhere, Anytime.
 					<br />
 					Your Fitness, Your Schedule.
@@ -15,11 +15,13 @@ const Hero = () => {
 					Connect with elite trainers for 1-on-1 coaching, live classes, or
 					self-paced courses.
 				</h3>
-				<div className="w-full flex justify-center lg:justify-start mt-4">
-					<Button size="lg" className="rounded-l-full pr-4">
+				<div className="w-full flex justify-center lg:justify-start mt-4 items-center font-body">
+					<Button size="lg" className="rounded-l-full pr-4 bg-primary">
 						Find a Trainer
 					</Button>
-          <Button size="lg" className="rounded-r-full pl-4">Become a Trainer</Button>
+					<Button size="lg" className="rounded-r-full">
+						Become a Trainer
+					</Button>
 				</div>
 			</div>
 
